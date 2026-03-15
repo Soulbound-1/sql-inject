@@ -13,7 +13,7 @@ def simulate_sqli():
         "password": "any_password"
     }
 
-    print(f"[*] Attempting SQL Injection on {URL}....")
+    print(f"[*] Attempting SQL Injection on {URL}...")
     response = requests.post(URL, data=payload)
 
     if response.status_code == 200:
